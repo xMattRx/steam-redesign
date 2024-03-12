@@ -1,0 +1,125 @@
+.Navbar {
+    align-items: center;
+    background: var(--dark-background-20);
+    justify-content: center;
+    display: flex;
+    min-height: 80px;
+  
+    @media (max-width: var(--breakpoint-md)) {
+      min-height: 60px;
+    }
+  
+    &__content {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1920px;
+      width: 100%;
+      padding: 20px 32px;
+  
+      @media (max-width: var(--breakpoint-md)) {
+        flex-direction: row;
+        padding: 10px 24px;
+      }
+    }
+  
+    &__itens {
+      align-self: flex-start;
+      display: flex;
+      gap: 36px;
+      margin-left: 80px;
+      padding: 0px;
+      list-style: none;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+  
+      @media (max-width: var(--breakpoint-md)) {
+        display: none;
+      }
+    }
+  
+    &__item {
+      font-family: Inter;
+  
+      & > a {
+        color: var(--light-background);
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  
+    &__logo {
+      display: block;
+  
+      @media (max-width: var(--breakpoint-md)) {
+        display: none;
+      }
+    }
+  
+    &__iconProfile {
+      background: url('../../../../public/img/profilePhoto.jpeg');
+      background-size: cover;
+      border-radius: 48px;
+      height: 40px;
+      position: relative;
+      min-width: 40px;
+  
+      &::after {
+        content: '';
+        border-radius: 50px;
+        background: var(--accent-color);
+        height: 8px;
+        top: 30px;
+        right: 1%;
+        position: absolute;
+        width: 8px;
+  
+        @media (max-width: var(--breakpoint-md)) {
+          left: 30px;
+        }
+      }
+    }
+  
+    &__iconBell {
+      align-items: center;
+      background: var(--dark-text);
+      border-radius: 40px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+    }
+  
+    &__iconsWrapperDesktop {
+      align-items: center;
+      display: flex;
+      gap: 40px;
+      padding-right: 64px;
+  
+      @media (max-width: var(--breakpoint-md)) {
+        display: none;
+        gap: 24px;
+      }
+  
+      & > svg {
+        cursor: pointer;
+      }
+    }
+  
+    &__iconsWrapperMobile {
+      display: none;
+  
+      @media (max-width: var(--breakpoint-md)) {
+        display: flex;
+        gap: 24px;
+      }
+  
+      & > svg {
+        cursor: pointer;
+      }
+    }
+  }

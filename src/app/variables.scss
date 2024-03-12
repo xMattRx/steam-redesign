@@ -1,0 +1,19 @@
+.root {
+    --primary-color: #0094FF;
+    --dark-background-10: #0E131E;
+    --dark-background-20: #1B2838;
+    --light-background: #FFFFFF;
+    --dark-text: #2E4053;
+  
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 376px;
+    --breakpoint-md: 769px;
+    --breakpoint-lg: 1441px;
+    --breakpoint-xl: 1921px;
+  }
+  
+  body {
+    background: var(--dark-background-10);
+  }
+
+  
