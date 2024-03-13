@@ -1,0 +1,48 @@
+.Topics {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+  margin-top: 102px;
+
+  &__content {
+    background-color: var(--dark-text);
+    max-width: 1216px;
+    width: 100%;
+    padding: 0px 38.5px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 29px 0px;
+    color: var(--light-background);
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      visibility: hidden;
+      background: var(--primary-color);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px;
+      height: 4px;
+      width: 100%;
+    }
+
+    &:hover::after {
+      visibility: visible;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
