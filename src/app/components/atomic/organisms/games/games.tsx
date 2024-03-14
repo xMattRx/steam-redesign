@@ -1,7 +1,7 @@
-import React from 'react';
-import Game from '../../molecules/game/game';
-import styles from './games.module.scss';
 import { StaticImageData } from 'next/image';
+import React from 'react';
+import styles from './games.module.scss';
+import Game from '../../molecules/game/game';
 
 interface GameData {
   name: string;
